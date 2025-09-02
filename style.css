@@ -187,6 +187,7 @@ skills section */
     }
 
     .content{
+        min-height: fit-content;
         height: auto;
         padding: 20px  0 0 0 ;
     }
