@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+}
+#wrapper{
+    padding: 10px 20px;
+}
+
+/* heading */
+
+#mypage-header{
+    padding: 25px 0;      
+    background-color:#808080;
+}
+ 
+#mypage-header h1{
+    text-align: center;
+    color: white;
+}
+
+.resume-heading{
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+
+.middle-content{
+    display: flex;
+    background-color:rgba(36, 60, 81, 0.151) ;
+}
+
+/* sidbead */
+
+#mypage-leftnav{
+    width: 40%;
+}
+
+.sidebar-header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:serif;
+}
+.side-content{
+    padding: 40px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-right: 2px solid black;
+}
+
+
+/* main content */
+
+.content{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.description{
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.education-col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills-col{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+#skills-section{
+    font-size: 13px;
+}
+#project-section{
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+#project-container{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.projects{
+    margin-top: 20px;
+}
+
+#project-section ul li p{
+    text-align: justify;
+}
+
+#project-aside{
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.project-header{
+    font-size: 15px;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+    text-align: center;
+}
+
+.project-links{
+    cursor: pointer;
+}
+
+.project-links:hover{
+    color: red;
+}
+
+/* footer content */
+
+#mypage-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: antiquewhite;
+}
+
+#footer-head{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Used for mobile view */
+
+@media (max-width : 576px) {
+    #mypage-header{
+        padding: 15px 0;
+    }
+
+    #wrapper{
+        padding:5px 15px;
+    }
+    .hidden{
+        display: block;
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    #mypage-leftnav{
+        display: none;
+    }
+
+    .content{
+        height: auto;
+        padding: 20px  0 0 0 ;
+    }
+
+    #wrapper{
+        font-size: 13px;
+    }
+    .project-header{
+        font-size: 12px;
+    }
+
+    .skills-col{
+        font-size: 10px;
+    }
+
+    #project-section{
+        height: auto;
+    }
+    .description{
+    padding: 0 10px;
+    }
+
+    .skills-col , #project-container{
+        padding-left: 20px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+
+        /* for desktop view */
+
+@media (max-width: 768px) and (min-width : 576px) {
+    #project-aside{
+        height: 650px;
+    }
+
+    #project-section{
+        padding-bottom: 20px;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+    }
+}
