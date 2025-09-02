@@ -1,6 +1,13 @@
+/* Importing fonts from Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;600&family=Oswald:wght@400;500&family=Poppins:wght@400;600&display=swap');
+
 body{
     margin: 0;
 }
+
+/* wrapper container for my resume */
+
 #wrapper{
     padding: 10px 20px;
 }
@@ -12,7 +19,7 @@ body{
     background-color:#808080;
 }
  
-#mypage-header h1{
+#resume-header{
     text-align: center;
     color: #ffffff;
 }
@@ -20,15 +27,10 @@ body{
 .resume-heading{
     text-align: center;
     font-size: 20px;
-    font-family: serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-
-.middle-content{
-    display: flex;
-    background-color:rgba(36, 60, 81, 0.151) ;
-}
 
 /* sidbead */
 
@@ -39,7 +41,7 @@ body{
 .sidebar-header{
     font-size: 20px;
     font-weight: bold;
-    font-family:serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .side-content{
     padding: 40px;
@@ -54,6 +56,13 @@ body{
 
 /* main content */
 
+
+.middle-content{
+    display: flex;
+    background-color:rgba(36, 60, 81, 0.151) ;
+}
+
+
 .content{
     height: 200px;
     display: flex;
@@ -63,17 +72,25 @@ body{
 .center-content-heading{
     margin-bottom: 0;
 }
+
+/* objective */
+
 .description{
     padding-left: 30px;
     padding-right: 20px;
     text-align: justify;
 }
 
+/* education section */
+
 .education-col{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+/* 
+skills section */
+
 .skills-col{
     display: flex;
     gap: 20px;
@@ -84,8 +101,11 @@ body{
 #skills-section{
     font-size: 13px;
 }
+
+/* project section */
+
 #project-section{
-    height: 600px;
+    min-height: 600px;
     display: flex;
     align-items: center;
 }
@@ -104,7 +124,7 @@ body{
 }
 
 #project-aside{
-    height: 500px;
+    min-height: 500px;
     margin-bottom: 20px;
 }
 
@@ -144,12 +164,15 @@ body{
 /* Used for mobile view */
 
 @media (max-width : 576px) {
+/* 
+    header section */
     #mypage-header{
         padding: 15px 0;
     }
 
     #wrapper{
         padding:5px 15px;
+        font-size: 13px;
     }
     .hidden{
         display: block;
@@ -168,24 +191,26 @@ body{
         padding: 20px  0 0 0 ;
     }
 
-    #wrapper{
-        font-size: 13px;
-    }
     .project-header{
         font-size: 12px;
     }
+
+    /* skills section */
 
     .skills-col{
         font-size: 10px;
     }
 
+
+    /* project section */
     #project-section{
+        min-height:fit-content ;
         height: auto;
         padding-top: 10px;
     }
 
     .description{
-    padding: 0 10px;
+        padding: 0 10px;
     }
 
     .education-col{
@@ -204,7 +229,7 @@ body{
 
 @media(min-width : 576px) and (max-width: 768px) {
     #project-aside{
-        height: 650px;
+        min-height: 650px;
     }
 
     #project-section{
