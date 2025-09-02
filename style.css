@@ -14,7 +14,7 @@ body{
  
 #mypage-header h1{
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 .resume-heading{
@@ -48,7 +48,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    border-right: 2px solid black;
+    border-right: 2px solid #000000;
 }
 
 
@@ -58,6 +58,10 @@ body{
     height: 200px;
     display: flex;
     align-items: center;
+}
+
+.center-content-heading{
+    margin-bottom: 0;
 }
 .description{
     padding-left: 30px;
@@ -95,7 +99,7 @@ body{
     margin-top: 20px;
 }
 
-#project-section ul li p{
+.project-description{
     text-align: justify;
 }
 
@@ -129,7 +133,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    background-color: antiquewhite;
+    background-color: #FAEBD7;
 }
 
 #footer-head{
@@ -149,9 +153,11 @@ body{
     }
     .hidden{
         display: block;
+        text-align: left;
         margin-top: 20px;
         font-size: 17px;
         font-weight: bold;
+        padding-left: 20px;
     }
     #mypage-leftnav{
         display: none;
@@ -175,9 +181,15 @@ body{
 
     #project-section{
         height: auto;
+        padding-top: 10px;
     }
+
     .description{
     padding: 0 10px;
+    }
+
+    .education-col{
+        padding-left: 20px;
     }
 
     .skills-col , #project-container{
@@ -190,7 +202,7 @@ body{
 
         /* for desktop view */
 
-@media (max-width: 768px) and (min-width : 576px) {
+@media(min-width : 576px) and (max-width: 768px) {
     #project-aside{
         height: 650px;
     }
